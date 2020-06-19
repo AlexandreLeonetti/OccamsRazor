@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"  />
+		<title> </title>
+		<meta name="viewport" content="width=device-width">
+		<style>
+      *{margin:0;padding:0}
+			body{
+				width:250px;
+				height:180px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+			.mailButton{
+				background: #3fa8ea;
+				border:0;
+				width:140px;
+				height:40px;
+				padding-top:10px;
+				border-radius: 5px;
+				color:white;
+				cursor: pointer;
+				box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+				text-align:center;
+			}
+			#status{
+				margin:10px;
+			}
+			#intro{
+				margin:10px;
+			}
+		</style>
+	
+	</head>
+	<body> 
+	<div id="intro">The Timocom automatic email sender extension status is : </div>
+	<p id="status"></p>
+		<table> 
+
+			<tr>
+				<td></td>
+				<td>
+					<div id="mailButton" class="button mailButton">TOGGLE</div>
+					<!--<input type="button" id="mailButton" value="Activate" />         -->
+				</td>
+			</tr>
+		</table>	
+		
+		<script src="/popup.js"></script>	
+	</body>
+</html>
+
