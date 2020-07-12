@@ -1,0 +1,38 @@
+{
+  "description": "Add a button to the toolbar to disable loading all images",
+   "name": "Occam",
+  "version": "1.0",
+  "manifest_version": 2,
+  "homepage_url": "https://github.com/ckuhl/ImageBlockX/",
+  "icons": {
+    "16": "icons/swordt.png",
+    "24": "icons/swordt.png",
+    "32": "icons/swordt.png",
+    "48": "icons/swordt.png",
+    "64": "icons/swordt.png",
+    "128": "icons/swordt.png",
+    "256": "icons/swordt.png",
+    "512": "icons/swordt.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/swordt.png",
+    "default_title": "Images are allowed"
+  }
+}

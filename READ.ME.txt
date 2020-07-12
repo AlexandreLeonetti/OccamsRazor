@@ -1,0 +1,12 @@
+In Brave Browser, go to :
+brave://extensions/
+
+click load unpacked.
+go to the folder of this extension. select it. and thats 'it !
+
+In google chrome, go to :
+
+chrome://extensions/
+
+click load unpacked.
+go to the folder of this extension. select it. and thats 'it !
