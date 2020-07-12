@@ -5,14 +5,14 @@
   "manifest_version": 2,
   "homepage_url": "https://github.com/ckuhl/ImageBlockX/",
   "icons": {
-    "16": "icons/image_blocked.svg",
-    "24": "icons/image_blocked.svg",
-    "32": "icons/image_blocked.svg",
-    "48": "icons/image_blocked.svg",
-    "64": "icons/image_blocked.svg",
-    "128": "icons/image_blocked.svg",
-    "256": "icons/image_blocked.svg",
-    "512": "icons/image_blocked.svg"
+    "16": "icons/swordt.png",
+    "24": "icons/swordt.png",
+    "32": "icons/swordt.png",
+    "48": "icons/swordt.png",
+    "64": "icons/swordt.png",
+    "128": "icons/swordt.png",
+    "256": "icons/swordt.png",
+    "512": "icons/swordt.png"
   },
   "permissions": [
     "webRequest",
@@ -20,16 +20,19 @@
     "<all_urls>",
     "storage"
   ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ],
   "background": {
     "scripts": [
       "background/background.js"
     ]
   },
   "browser_action": {
-    "default_icon": "icons/image_allowed.svg",
+    "default_icon": "icons/swordt.png",
     "default_title": "Images are allowed"
-  },
-  "options_ui": {
-    "page": "options/options.html"
   }
 }
