@@ -1,6 +1,6 @@
 {
-  "description": "Add a button to the toolbar to disable loading all images",
-   "name": "Occam",
+  "description": "Remove all images from web pages. To supress distraction.",
+   "name": "Occam's Razor",
   "version": "1.0",
   "manifest_version": 2,
   "homepage_url": "https://github.com/ckuhl/ImageBlockX/",
